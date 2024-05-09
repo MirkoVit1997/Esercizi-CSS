@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.box {
+  flex-grow: 1;
+  /* Impostazioni di default per ogni rettangolo */
+}
+
+.yellow {
+  flex-basis: 15%;
+  background-color: #f2ff3968;
+  margin-right: 50px;
+}
+
+.red {
+  flex-basis: 15%;
+  background-color: #ff03034e;
+  margin-right: 50px;
+}
+
+.green {
+  flex-basis: 10%;
+  background-color: #11ff004b;
+  margin-right: 50px;
+}
+
+.orange {
+  flex-basis: 40%;
+  background-color: #ffaa005d;
+  margin-right: 50px;
+}
+
+.blue {
+  flex-basis: 5%;
+  background-color: #0077ff37;
+}
+
+.yellow div,
+.red div {
+  height: 80px;
+  width: 70px;
+  background-color: white;
+  text-align: center;
+  margin-left: 43%;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  font: bold;
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.orange p,
+.red p {
+  text-align: left;
+  margin-left: 10%;
+}
