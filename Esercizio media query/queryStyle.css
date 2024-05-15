@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  justify-content: center;
+  align-content: center;
+}
+
+.gatto1,
+.gatto2,
+.gatto3 {
+  width: 250px;
+  height: 350px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #6261606e;
+  background-image: linear-gradient(to bottom, #6e6d6c25, white);
+  margin: 15px;
+}
+
+.cerchio {
+  display: flex;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+}
+
+.nome {
+  display: flex;
+  position: relative;
+  top: -40px;
+  left: 30px;
+  font-size: 12px;
+}
+
+.data {
+  display: flex;
+  position: relative;
+  top: -52px;
+  left: 30px;
+  font-size: 10px;
+  color: white;
+}
+
+.hellip {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  top: -120px;
+  right: 3px;
+  font-size: 30px;
+}
+
+.gatto-occhiali {
+  margin-top: 0;
+  color: white;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -135px;
+}
+
+.cuore {
+  font-size: 14px;
+  padding-left: 15px;
+  position: relative;
+  top: -130px;
+  left: 10px;
+}
+
+p {
+  font-size: 14px;
+  padding-left: 15px;
+  position: relative;
+  top: -130px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gatto1,
+  .gatto2,
+  .gatto3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gatto1,
+  .gatto2,
+  .gatto3 {
+    width: 100%;
+  }
+}
